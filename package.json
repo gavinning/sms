@@ -1,32 +1,42 @@
 {
-  "name": "@4a/alisms",
-  "version": "0.1.1",
-  "description": "阿里云SMS",
-  "main": "lib/alisms.js",
+  "name": "@4a/sms",
+  "version": "0.2.0",
+  "description": "telephone code, 短信验证码",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "mocha test/alisms.spec.js"
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "test": "mocha test/sms.spec.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gavinning/alisms.git"
+    "url": "git+https://github.com/gavinning/sms.git"
   },
   "keywords": [
+    "sms",
     "aliyun",
     "aliyun-sms",
     "alisms",
-    "sms"
+    "qcloud",
+    "qcloud-sms"
   ],
   "author": "gavinning",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gavinning/alisms/issues"
+    "url": "https://github.com/gavinning/sms/issues"
   },
-  "homepage": "https://github.com/gavinning/alisms#readme",
+  "homepage": "https://github.com/gavinning/sms#readme",
   "devDependencies": {
+    "@types/ioredis": "^4.27.1",
+    "@types/node": "^16.3.2",
     "ioredis": "^4.16.3",
-    "mocha": "^7.1.1"
+    "mocha": "^7.1.1",
+    "typescript": "^4.3.5"
   },
   "dependencies": {
-    "@alicloud/pop-core": "^1.7.9"
+    "@4a/asp": "^1.0.1",
+    "@alicloud/pop-core": "^1.7.9",
+    "tencentcloud-sdk-nodejs": "^4.0.194"
   }
 }

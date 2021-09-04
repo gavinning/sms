@@ -1,3 +1,5 @@
-dist/
+src/
+test/
+example/
 *.config.js
 sms.config.js
