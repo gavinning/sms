@@ -25,7 +25,8 @@ interface PublicPasscode {
     code: string
 }
 
-interface PublicSMSConfig {
+// For Options
+export interface AliyunConfig {
     accessKeyId: string
     accessKeySecret: string
     SignName: string
@@ -33,14 +34,17 @@ interface PublicSMSConfig {
     RegionId?: string
 }
 
-// For Options
-export interface AliyunConfig extends PublicSMSConfig {}
 // For class Aliyun
 export interface AliyunSMSConfig extends AliyunConfig, PublicPasscode {}
 
 // For Options
-export interface QcloudConfig extends PublicSMSConfig {
+export interface QcloudConfig {
     AppId: string
+    accessKeyId: string
+    accessKeySecret: string
+    SignName: string
+    TemplateId: string
+    RegionId?: string
 }
 // For class Qcloud
 export interface QcloudSMSConfig extends QcloudConfig, PublicPasscode {}

@@ -31,3 +31,4 @@ export class SMS {
 }
 
 export default SMS
+export { Options, Mode, AliyunConfig, QcloudConfig } from './config'

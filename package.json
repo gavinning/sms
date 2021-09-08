@@ -1,6 +1,6 @@
 {
   "name": "@4a/sms",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "telephone code, 短信验证码",
   "main": "dist/index.js",
   "scripts": {
